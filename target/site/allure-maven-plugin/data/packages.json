@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "src.test.resources.Earphones_feature.Проверка корректности поиска наушников на Яндекс.Маркет",
+    "children" : [ {
+      "name" : "Поиск наушников на Яндекс.Маркет",
+      "uid" : "f9367f2d5f159ec4",
+      "parentUid" : "4bdca3988b9c392323d7c9e6b8329a2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1639330292186,
+        "stop" : 1639330342922,
+        "duration" : 50736
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "src.test.resources.Earphones_feature.Проверка корректности поиска наушников на Яндекс.Маркет"
+  } ]
+}

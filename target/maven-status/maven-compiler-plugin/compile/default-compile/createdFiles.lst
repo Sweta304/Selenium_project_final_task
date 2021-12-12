@@ -1,0 +1,15 @@
+steps/YaMainSteps.class
+pages/MarketMainPage.class
+steps/BaseSteps.class
+pages/BasePage.class
+steps/MarketMainSteps.class
+pages/AllFiltersPage.class
+pages/YaMainPage.class
+steps/AllFiltersSteps.class
+util/TestProperties.class
+pages/ElectronicsPage.class
+steps/ScenarioSteps.class
+steps/ElectronicsSteps.class
+steps/GoodCategorySteps.class
+pages/GoodCategoryPage.class
+util/AllureReporter.class

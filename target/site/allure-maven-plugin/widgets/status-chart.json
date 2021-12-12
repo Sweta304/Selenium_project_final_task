@@ -1,0 +1,11 @@
+[ {
+  "uid" : "f9367f2d5f159ec4",
+  "name" : "Поиск наушников на Яндекс.Маркет",
+  "time" : {
+    "start" : 1639330292186,
+    "stop" : 1639330342922,
+    "duration" : 50736
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
