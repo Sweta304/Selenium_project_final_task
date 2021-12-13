@@ -36,6 +36,11 @@ public class ScenarioSteps {
         allFiltersSteps.priceFrom(price);
     }
 
+    @When("Открыт полный список производителей$")
+    public void producerFullListCu(){
+        allFiltersSteps.producerFullList();
+    }
+
     @When("^Выбран производитель \"(.+)\"$")
     public void chooseProducerCu (String producer){
         allFiltersSteps.chooseProducer(producer);

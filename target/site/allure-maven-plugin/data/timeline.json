@@ -4,21 +4,21 @@
   "children" : [ {
     "name" : "MacBook-Pro-Sveta.local",
     "children" : [ {
-      "name" : "38697@MacBook-Pro-Sveta.local.main(1)",
+      "name" : "42959@MacBook-Pro-Sveta.local.main(1)",
       "children" : [ {
-        "name" : "Поиск наушников на Яндекс.Маркет",
-        "uid" : "f9367f2d5f159ec4",
-        "parentUid" : "636e771af5899b964cd608cbfaacadc8",
+        "name" : "Поиск телевизоров на Яндекс.Маркет",
+        "uid" : "5925540da983f729",
+        "parentUid" : "5c85da74367cb88589dca9bb62045289",
         "status" : "passed",
         "time" : {
-          "start" : 1639330292186,
-          "stop" : 1639330342922,
-          "duration" : 50736
+          "start" : 1639379776169,
+          "stop" : 1639379828778,
+          "duration" : 52609
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "636e771af5899b964cd608cbfaacadc8"
+      "uid" : "5c85da74367cb88589dca9bb62045289"
     } ],
     "uid" : "ee1cdc05239c5d16978fda96bd492120"
   } ]

@@ -2,20 +2,20 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "src.test.resources.Earphones_feature.Проверка корректности поиска наушников на Яндекс.Маркет",
+    "name" : "src.test.resources.TV_feature.Проверка корректности поиска телевизоров на Яндекс.Маркет",
     "children" : [ {
-      "name" : "Поиск наушников на Яндекс.Маркет",
-      "uid" : "f9367f2d5f159ec4",
-      "parentUid" : "4bdca3988b9c392323d7c9e6b8329a2f",
+      "name" : "Поиск телевизоров на Яндекс.Маркет",
+      "uid" : "5925540da983f729",
+      "parentUid" : "e35087b354a18f07872913cb89e308d0",
       "status" : "passed",
       "time" : {
-        "start" : 1639330292186,
-        "stop" : 1639330342922,
-        "duration" : 50736
+        "start" : 1639379776169,
+        "stop" : 1639379828778,
+        "duration" : 52609
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "src.test.resources.Earphones_feature.Проверка корректности поиска наушников на Яндекс.Маркет"
+    "uid" : "src.test.resources.TV_feature.Проверка корректности поиска телевизоров на Яндекс.Маркет"
   } ]
 }

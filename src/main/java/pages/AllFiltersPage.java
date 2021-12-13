@@ -26,6 +26,9 @@ public class AllFiltersPage extends BasePage {
     @FindBy(xpath = "//div[@data-filter-id='7893318']")
     public WebElement producerMenu;
 
+    @FindBy(xpath = "//h1[text()='Все фильтры']")
+    public WebElement searchArea;
+
     public void chooseProducer(String producerName) {
         BaseSteps.getDriver().findElement(By.xpath("//div[text()='" + producerName + "']")).click();
     }
@@ -38,6 +41,9 @@ public class AllFiltersPage extends BasePage {
     public int searchResultsFromFilter() {
         String filterApplyButtonName = filterApply.getText();
         int searchResults = Integer.parseInt(filterApplyButtonName.replaceAll("[^\\d]", ""));
+        if (searchResults>48){
+            searchResults = 48;
+        }
         return searchResults;
     }
 

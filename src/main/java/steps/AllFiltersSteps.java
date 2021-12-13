@@ -25,16 +25,22 @@ public class AllFiltersSteps {
         allFiltersPage.fillField("цена",price);
     }
 
+    @Step("Раскрывает полный список производителей")
+    public void producerFullList(){
+        ((JavascriptExecutor) BaseSteps.getDriver()).executeScript("arguments[0].scrollIntoView();", allFiltersPage.showMoreButton);
+        allFiltersPage.showMoreButton.click();
+    }
+
     @Step("Выбирает производителя {0}")
     public void chooseProducer(String producerName){
-        ((JavascriptExecutor) BaseSteps.getDriver()).executeScript("arguments[0].scrollIntoView();", allFiltersPage.color);
-        allFiltersPage.showMoreButton.click();
         allFiltersPage.chooseProducer(producerName);
+        allFiltersPage.searchArea.click();
+        BaseSteps.getDriver().manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
     }
 
     @Step("Применяет фильтр")
     public void applyButton (){
-        BaseSteps.getDriver().manage().timeouts().implicitlyWait(15000, TimeUnit.SECONDS);
+        BaseSteps.getDriver().manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
         BaseSteps.searchRes = allFiltersPage.searchResultsFromFilter();
         allFiltersPage.filterApply.click();
     }
@@ -42,7 +48,7 @@ public class AllFiltersSteps {
     @Step("Проверяет кол-во выведенных результатов поиска")
     public void correctResultsQty (){
         wait.until(ExpectedConditions.visibilityOf(new GoodCategoryPage().allFilters));
-        BaseSteps.getDriver().manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+        BaseSteps.getDriver().manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
         int actualResult = allFiltersPage.searchResultCounter();
         int expectedResult = BaseSteps.searchRes;
         //int expectedResult = 25;
