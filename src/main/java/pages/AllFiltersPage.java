@@ -33,8 +33,11 @@ public class AllFiltersPage extends BasePage {
         BaseSteps.getDriver().findElement(By.xpath("//div[text()='" + producerName + "']")).click();
     }
 
-    @FindBy(xpath = "//a[contains(text(),'предложений')]")
+    @FindBy(xpath = "//a[contains(text(),'предложени')]")
     public WebElement filterApply;
+
+    @FindBy(xpath="//div[@data-apiary-widget-id='/footer/appPromoFooter']")
+    public WebElement footer;
 
     List<WebElement> resultsList;
 
