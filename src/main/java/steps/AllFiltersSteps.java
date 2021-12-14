@@ -19,7 +19,6 @@ public class AllFiltersSteps {
     AllFiltersPage allFiltersPage = new AllFiltersPage();
 
 
-
     @Step("Устанавливает цену от {0}")
     public void priceFrom (String price){
         allFiltersPage.fillField("цена",price);
@@ -27,7 +26,7 @@ public class AllFiltersSteps {
 
     @Step("Раскрывает полный список производителей")
     public void producerFullList(){
-        ((JavascriptExecutor) BaseSteps.getDriver()).executeScript("arguments[0].scrollIntoView();", allFiltersPage.showMoreButton);
+        ((JavascriptExecutor) BaseSteps.getDriver()).executeScript("arguments[0].scrollIntoView();", allFiltersPage.footer);
         allFiltersPage.showMoreButton.click();
     }
 
@@ -35,11 +34,21 @@ public class AllFiltersSteps {
     public void chooseProducer(String producerName){
         allFiltersPage.chooseProducer(producerName);
         allFiltersPage.searchArea.click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         BaseSteps.getDriver().manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
     }
 
     @Step("Применяет фильтр")
     public void applyButton (){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         BaseSteps.getDriver().manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
         BaseSteps.searchRes = allFiltersPage.searchResultsFromFilter();
         allFiltersPage.filterApply.click();
